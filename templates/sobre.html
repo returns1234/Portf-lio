@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}Sobre | Portfólio{% endblock %}
+
+{% block content %}
+<section class="container page-head">
+	<h1 class="reveal">Sobre mim</h1>
+	<p class="muted reveal">
+		Um resumo profissional, objetivo e fácil de escanear.
+	</p>
+</section>
+
+<section class="container section">
+	<div class="two-col">
+		<div class="glass block reveal">
+			<h2>Quem eu sou</h2>
+			<p>
+				Sou desenvolvedor focado em criar experiências interativas, unindo lógica, design e código. 
+         Comecei desenvolvendo jogos 2D, o que me deu uma base forte em programação, organização de sistemas e experiência do usuário.
+      
+
+			</p>
+			<p>
+				Gosto de projetos que envolvem interação, feedback visual e regras bem definidas — seja em jogos ou aplicações web.
+			</p>
+		</div>
+
+		<div class="glass block reveal">
+			<h2>Habilidades</h2>
+			<ul class="list">
+				<li><strong>Desenvolvimento de jogos</strong> Lógica de jogo, estados, colisões, pontuação</li>
+				<li><strong>Front-end:</strong>HTML, CSS, JavaScript, interfaces responsivas e interativas</li>
+				<li><strong>Back-end:</strong> Python, Flask, APIs REST</li>
+				<li><strong>Boas práticas:</strong> Git, organização de projeto, componentização</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<section class="container section">
+	<div class="glass block reveal">
+		<h2>Experiência / Destaques</h2>
+		<div class="timeline">
+			<div class="t-item">
+				<div class="t-dot"></div>
+				<div>
+					<h3>Jogo de plataforma 2D</h3>
+					<p class="muted">Desenvolvimento de um jogo de plataforma com sistema de colisão, inimigos, fases e controle de personagem.
+						Foco em lógica de jogo, organização de eventos e experiência do jogador.
+						</p>
+				</div>
+			</div>
+			<div class="t-item">
+				<div class="t-dot"></div>
+				<div>
+					<h3>Jogo de Nave Arcade</h3>
+					<p class="muted">Jogo inspirado em arcades clássicos, com movimentação livre, ondas de inimigos e sistema de pontuação.
+						Projeto focado em mecânicas, feedback visual e progressão.
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

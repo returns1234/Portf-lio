@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Contato | Portfólio{% endblock %}
+
+{% block content %}
+<section class="container page-head">
+	<h1 class="reveal">Contato</h1>
+	<p class="muted reveal">Vamos conversar sobre seu projeto.</p>
+</section>
+
+<section class="container section">
+	<div class="two-col">
+		<div class="glass block reveal">
+			<h2>Mensagem</h2>
+
+			{% if sent %}
+				<div class="toast">
+					Mensagem enviada com sucesso. Retornarei em breve.
+				</div>
+			{% endif %}
+
+			<form class="form" method="POST">
+				<label>
+					<span>Nome</span>
+					<input name="nome" placeholder="Seu nome" required />
+				</label>
+
+				<label>
+					<span>E-mail</span>
+					<input name="email" type="email" placeholder="seuemail@exemplo.com" required />
+				</label>
+
+				<label>
+					<span>Mensagem</span>
+					<textarea name="mensagem" rows="5" placeholder="Conte um pouco do que precisa" required></textarea>
+				</label>
+
+				<button class="btn" type="submit">Enviar</button>
+			</form>
+		</div>
+
+		<div class="glass block reveal">
+			<h2>Links</h2>
+			<p class="muted">Prefere chamar por outro canal?</p>
+
+			<div class="contact-cards">
+				<a class="contact-card" href="mailto:thiagoassissilva619@gmail.com">
+					<span class="cc-title">E-mail</span>
+					<span class="muted">thiagoassissilva619@gmail.com</span>
+				</a>
+				<a class="contact-card" href="https://www.linkedin.com/in/thiago-assis-ab96b43aa/" target="_blank" rel="noreferrer">
+					<span class="cc-title">LinkedIn</span>
+					<span class="muted">Thiago Assis</span>
+				</a>
+				<a class="contact-card" href="https://github.com/returns1234" target="_blank" rel="noreferrer">
+					<span class="cc-title">GitHub</span>
+					<span class="muted">@returns1234</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>{% block title %}Portfólio{% endblock %}</title>
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container nav">
+			<a class="brand" href=" url_for('index') ">
+				<span class="brand-dot"></span>
+				<span>Portfólio</span>
+			</a>
+
+			<nav class="menu" id="menu">
+				<a href="{{ url_for('index') }}">Início</a>
+                <a href="{{ url_for('sobre') }}">Sobre</a>
+                <a href="{{ url_for('projetos') }}">Projetos</a>
+                <a href="{{ url_for('contato') }}">Contato</a>
+
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		{% block content %}{% endblock %}
+	</main>
+
+	<div class="mouse-light"></div>
+	
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

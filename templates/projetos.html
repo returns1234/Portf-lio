@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Projetos | Portfólio{% endblock %}
+
+{% block content %}
+<section class="container page-head">
+	<h1 class="reveal">Projetos</h1>
+	<p class="muted reveal">
+		Alguns trabalhos para demonstrar estilo, organização e qualidade.
+	</p>
+</section>
+
+<section class="container section">
+	<div class="projects-grid">
+		<article class="project glass reveal">
+			<div class="project-top">
+				<div class="card glass project-card">
+					<div class="project-thumb">
+						<img 
+							src="{{ url_for('static', filename='img/projetos/jogo-plataforma.png') }}"
+							alt="Jogo de plataforma 2D"
+						>
+					</div>
+				
+					<h3>Jogo de Plataforma 2D</h3>
+					<span>Construct • JavaScript • HTML5</span>
+				
+					<p>
+						Jogo de plataforma com sistema de colisão, inimigos, fases e pontuação.
+					</p>
+				
+					<div class="card-actions">
+						<a href="#" class="btn">Ver</a>
+						<a href="#" class="btn primary">Código</a>
+					</div>
+				</div>
+				
+		</article>
+
+		<article class="project glass reveal">
+		
+           <div class="card glass project-card">
+             <div class="project-thumb">
+        <img 
+            src="{{ url_for('static', filename='img/projetos/jogo-nave.png') }}"
+            alt="Jogo de Nave Arcade"
+        >
+    </div>
+
+                      <h3>Jogo de Nave Arcade</h3>
+               <span>Construct • JavaScript • HTML5</span>
+
+    <p>
+        Jogo de nave inspirado em arcades clássicos, com ondas de inimigos,
+        colisões e sistema de pontuação.
+    </p>
+
+    <div class="card-actions">
+        <a href="#" class="btn">Ver</a>
+        <a href="#" class="btn primary">Código</a>
+    </div>
+
+</section>
+{% endblock %}
