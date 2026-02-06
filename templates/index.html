@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% block title %}Início | Portfólio{% endblock %}
+
+{% block content %}
+<section class="hero container">
+	<div class="hero-left">
+		<p class="pill reveal">Disponível para freelas • Remoto / Presencial</p>
+
+		<h1 class="reveal">
+			Desenvolvedor de experiências interativas e jogos 2D.
+		</h1>
+
+		<p class="sub reveal">
+			Criação de jogos, interfaces e aplicações web utilizando JavaScript, Construct e Flask.
+		</p>
+
+		<div class="hero-actions reveal">
+			<a class="btn" href="{{ url_for('projetos') }}">🎮 Ver projetos</a>
+            <a class="btn btn-ghost" href="{{ url_for('contato') }}">💬 Entrar em contato</a>
+
+		</div>
+
+		<div class="stats reveal">
+			<div class="stat">
+				<div class="stat-num">2</div>
+				<div class="stat-label">Projetos publicados</div>
+			</div>
+			<div class="stat">
+				<div class="stat-num">1+</div>
+				<div class="stat-label">Ano criando jogos e experiências</div>
+			</div>
+			<div class="stat">
+				<div class="stat-num">100%</div>
+				<div class="stat-label">Foco em aprendizado</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="hero-right reveal">
+		<div class="card glass">
+			<div class="avatar">
+				<img src="{{ url_for('static', filename='img/profile.png') }} " alt="Avatar" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+				<div class="avatar-fallback" style="display:none;">SN</div>
+			</div>
+
+			<h3>Thiago Assis</h3>
+			<p class="muted">Desenvolvedor • Jogos 2D • Web Interativa</p>
+
+			<div class="chips">
+				<span class="chip">HTML</span>
+				<span class="chip">CSS</span>
+				<span class="chip">JS</span>
+				<span class="chip">Flask</span>
+				<span class="chip">Construct</span>
+			</div>
+
+			<div class="divider"></div>
+
+			<div class="mini">
+				<div class="mini-row">
+					<span class="muted">Local</span>
+					<span>Brasil</span>
+				</div>
+				<div class="mini-row">
+					<span class="muted">Foco</span>
+					<span>Sites, APIs, Dashboards</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="floating-badge glass reveal">
+			<span class="dot"></span>
+			<span>Entregas com qualidade e prazo</span>
+		</div>
+	</div>
+</section>
+
+<section class="container section">
+	<div class="section-head reveal">
+		<h2>O que eu entrego</h2>
+		<p class="muted">Soluções que ficam boas no design e no código.</p>
+	</div>
+
+	<div class="grid-3">
+		<article class="feature glass reveal">
+			<h3>Experiências interativas</h3>
+			<p>Criação de jogos e interfaces com foco em interação, feedback visual e sensação de resposta ao usuário.</p>
+		</article>
+		<article class="feature glass reveal">
+			<h3>Lógicas e sistemas</h3>
+			<p>Desenvolvimento de mecânicas, estados, colisões e regras de jogo aplicadas também a sistemas web.</p>
+		</article>
+		<article class="feature glass reveal">
+			<h3>Código organizado</h3>
+			<p>Projetos bem estruturados, com código limpo, organização de arquivos e preocupação com performance.</p>
+		</article>
+	</div>
+</section>
+{% endblock %}
